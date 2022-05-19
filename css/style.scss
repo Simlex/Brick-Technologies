@@ -14,6 +14,8 @@ $optimal : 16;
     --white : #ffffff;
     --blue : rgba(7, 88, 206, 1);
     --greyishBlue : #6480A4;
+    --lightgrey : rgba(161, 174, 183, 1);
+    --darkgreyishblue : #435680;
 }
 
 h2 {
@@ -230,3 +232,96 @@ section {
         } 
     }
 }
+
+.blog {
+
+    &__content {
+        margin-bottom: 44px;
+        color: var(--blue);
+
+        &--image {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            margin-bottom: 8px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            width: 90%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            text-align: center;
+
+            &__date {
+                color: var(--lightgrey);
+            }
+            &__main-text {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 31px;
+                margin-bottom: 8px;
+            }
+            &__sub-text {
+                color: var(--darkgreyishblue);
+            }
+        }
+
+        &--btn {
+            width: 116px;
+            height: 40px;
+            border: 1px solid var(--blue);
+            border-radius: 4px;
+            margin: 0px auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.feedback {
+
+    .contents {
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 44px;
+
+            &--image {
+                width: 124px;
+                height: 124px;
+                margin-bottom: 20px;
+
+                img {
+                    width: 100%;
+                    border-radius: 100px;
+                }
+            }
+
+            &--text {
+                color: var(--darkgreyishblue);
+                text-align: center;
+                margin-bottom: 18px;
+            }
+
+            &--profile {
+                text-align: center;
+
+                .name {
+                    color: var(--blue);
+                }
+                .job-title {
+                    color: var(--darkgreyishblue);
+                }
+            }
+        }
+    }
+}
+

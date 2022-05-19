@@ -12,6 +12,8 @@
   --white: #ffffff;
   --blue: rgba(7, 88, 206, 1);
   --greyishBlue: #6480A4;
+  --lightgrey: rgba(161, 174, 183, 1);
+  --darkgreyishblue: #435680;
 }
 
 h2 {
@@ -275,5 +277,107 @@ section {
 .our-works__check-services a {
   text-decoration: underline;
   color: var(--blue);
+}
+
+.blog__content {
+  margin-bottom: 44px;
+  color: var(--blue);
+}
+
+.blog__content--image {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.blog__content--image img {
+  width: 100%;
+}
+
+.blog__content .content {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog__content .content__date {
+  color: var(--lightgrey);
+}
+
+.blog__content .content__main-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  margin-bottom: 8px;
+}
+
+.blog__content .content__sub-text {
+  color: var(--darkgreyishblue);
+}
+
+.blog__content--btn {
+  width: 116px;
+  height: 40px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback .contents__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+
+.feedback .contents__item--image {
+  width: 124px;
+  height: 124px;
+  margin-bottom: 20px;
+}
+
+.feedback .contents__item--image img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.feedback .contents__item--text {
+  color: var(--darkgreyishblue);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.feedback .contents__item--profile {
+  text-align: center;
+}
+
+.feedback .contents__item--profile .name {
+  color: var(--blue);
+}
+
+.feedback .contents__item--profile .job-title {
+  color: var(--darkgreyishblue);
 }
 /*# sourceMappingURL=style.css.map */
