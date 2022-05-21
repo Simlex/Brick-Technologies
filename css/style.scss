@@ -425,15 +425,104 @@ section {
     }
     .form {
         width: 100%;
-        border: $bor;
+        margin-bottom: 40px; 
 
         &__input {
             height: 40px;
+            height: fit-content;
             border: 1px solid var(--inputgrey);
             margin-bottom: 16px;
             display: flex;
             align-items: center;
-            //Select type of input - email
+            gap: 10px;
+            color: var(--inputgrey);
+            font-size: 14px;
+            font-weight: 400;
+            padding-left: 4px;
+
+            input[type], select, textarea {
+                height: 40px; 
+                border: none;
+                outline: var(--darkgreyishblue); 
+            }
+
+            input[type="email"] { 
+                width: 100%;
+            }
+ 
+            select {
+                width: 100%; 
+            }
+
+            .message {
+                height: fit-content;
+                border: $bor; 
+                word-wrap: break-word;
+            }
+            textarea { 
+                width: 100%;
+                height: 96px;
+                padding-top: 6px;
+            }
+        }
+
+        input[type="button"] {
+            border: $bor;
+            width: 100%;
+            height: 40px;
+            border-radius: 12px;
+            background-color: var(--blue);
+            color: var(--white);
+            text-transform: uppercase;
+        }
+    }
+
+    &__details {
+
+        .phone {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .mail {
+            display: flex;
+            gap: 6px;
+        }
+    }
+}
+
+.footer {
+
+    &__svg {
+        height: 43px;
+        display: flex;
+        margin-bottom: 12px;
+
+        svg {
+            margin: 0 auto;
+        }
+    }
+    
+    &__intro-text {
+        margin-bottom: 30px;
+            p {
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                color: var(--darkgreyishblue);
+            }
+    }
+
+    &__links {
+        border: $bor;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        &--product {
+            border: $bor;
+            width: 220px;
+            margin: 0px auto;
         }
     }
 }
