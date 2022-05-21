@@ -158,6 +158,7 @@ section, footer {
 
             &:hover {
                 background: linear-gradient(90deg, #003F9B 0%, #0068FF 100%);
+                transform: translateY(-2px);
             }
         }
     }
@@ -223,6 +224,16 @@ section, footer {
         a {
             text-decoration: underline;
             color: var(--blue);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &:hover {
+                svg {
+                    transform: translateX(20px);
+                    opacity: 0;
+                }
+            }
         }
     }
 }
@@ -273,6 +284,7 @@ section, footer {
             color: var(--white);
             border-radius: 12px;
             margin-top: 32px;
+            text-decoration: none;
 
             display: flex;
             justify-content: center;
@@ -290,6 +302,13 @@ section, footer {
         a {
             text-decoration: underline;
             color: var(--blue);
+
+            &:hover {
+                svg {
+                    transform: translateX(20px);
+                    opacity: 0;
+                }
+            }
         } 
     }
 }
@@ -337,6 +356,8 @@ section, footer {
             border: 1px solid var(--blue);
             border-radius: 4px;
             margin: 0px auto;
+            text-decoration: none;
+            color: var(--blue);
 
             display: flex;
             justify-content: center;
@@ -387,6 +408,7 @@ section, footer {
 }
 
 .team {
+    color: var(--darkgreyishblue);
 
     &__intro-text {
         font-weight: 400;
