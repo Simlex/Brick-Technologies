@@ -636,7 +636,7 @@ section, footer {
   text-align: left;
   gap: 12px;
   color: var(--blue);
-  width: 84px;
+  width: 104px;
 }
 
 .footer__links--group .item h4 {
