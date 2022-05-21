@@ -82,7 +82,6 @@ section, footer {
 
         .message {
             height: fit-content;
-            border: $bor; 
             word-wrap: break-word;
         }
         textarea { 
@@ -93,13 +92,13 @@ section, footer {
     }
 
     input[type="button"] {
-        border: $bor;
         width: 100%;
         height: 40px;
         border-radius: 12px;
         background-color: var(--blue);
         color: var(--white);
         text-transform: uppercase;
+        border: none;
     }
 }
 
