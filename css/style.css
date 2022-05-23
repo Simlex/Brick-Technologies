@@ -3,8 +3,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: 300ms all;
-  transition: 300ms all;
   font-family: 'Jost', sans-serif;
 }
 
@@ -15,6 +13,11 @@
   --lightgrey: rgba(161, 174, 183, 1);
   --darkgreyishblue: #435680;
   --inputgrey: #C2D1D9;
+}
+
+body {
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 
 h2 {

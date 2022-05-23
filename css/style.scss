@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: 300ms all;
     font-family: 'Jost', sans-serif;
 }
 
@@ -17,6 +16,10 @@ $optimal : 16;
     --lightgrey : rgba(161, 174, 183, 1);
     --darkgreyishblue : #435680;
     --inputgrey : #C2D1D9;
+}
+
+body {
+    transition: 300ms all ease;
 }
 
 h2 {
