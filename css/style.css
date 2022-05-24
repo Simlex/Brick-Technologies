@@ -720,7 +720,7 @@ hr {
 }
 
 .info-container {
-  width: 338px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,6 +736,7 @@ hr {
   padding: 20px;
   border-radius: 15px;
   border: 1px solid #0668e4;
+  border: 1px solid #000;
 }
 
 .info-container .info-box__image {

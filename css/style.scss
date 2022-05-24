@@ -614,16 +614,18 @@ hr {
 }
 
 .info-container {
-    width: 338px;
+    //width: 338px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 38px; 
 
-    .info-box {
+    .info-box { 
         padding: 20px;
         border-radius: 15px;
         border: 1px solid rgba(6, 104, 228, 1);
+        border: $bor;
 
         &__image {
             width: 100%;
