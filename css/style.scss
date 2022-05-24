@@ -550,10 +550,11 @@ section, footer {
             width: 220px;
             margin: 0px auto;
             margin-bottom: 44px;
+
             .item {
                 display: inline-flex;
                 flex-direction: column;
-                text-align: left;
+                text-align: center;
                 gap: 12px;
                 color: var(--blue);
                 width: 104px; 

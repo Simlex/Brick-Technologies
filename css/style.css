@@ -663,7 +663,7 @@ section, footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: left;
+  text-align: center;
   gap: 12px;
   color: var(--blue);
   width: 104px;
