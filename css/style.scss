@@ -16,6 +16,7 @@ $optimal : 16;
     --lightgrey : rgba(161, 174, 183, 1);
     --darkgreyishblue : #435680;
     --inputgrey : #C2D1D9;
+    --sub-info : #666666;
 }
 
 body {
@@ -611,3 +612,48 @@ hr {
 .services-paragraph {
     font-size: 14px;
 }
+
+.info-container {
+    width: 338px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38px; 
+
+    .info-box {
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid rgba(6, 104, 228, 1);
+
+        &__image {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 0px auto;
+
+            img {
+                width: 100%;
+                max-height: 100%;
+                display: block;
+            } 
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 36px;
+            margin: 21px 0 17px 0;
+            color: var(--darkgreyishblue);
+        }
+        .main-info {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 17px;
+        }
+        .sub-info {
+            font-size: 12px;
+            line-height: 16px;
+            color: var(--sub-info)
+        }
+    }
+} 
