@@ -67,6 +67,9 @@ section, footer {
         font-size: 14px;
         font-weight: 400;
         padding-left: 4px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 
         input[type], select, textarea {
             height: 40px; 
@@ -597,4 +600,14 @@ hr {
             color: var(--blue);
         }
     }
+}
+
+
+//OVERIDES ON SERVICES PAGE ---------------------------------------
+.services-header {
+    text-align: left;
+    padding: 0px;
+}
+.services-paragraph {
+    font-size: 14px;
 }
