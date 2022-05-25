@@ -21,6 +21,7 @@ $optimal : 16;
 
 body {
     transition: 300ms all ease;
+    position: relative;
 }
 
 h2 {
@@ -44,6 +45,44 @@ nav {
     .nav-logo {
         display: flex;
     }
+}
+
+.nav-overlay {
+    border: $bor;
+    height: 100vh;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.85);
+    position: absolute;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    ul {
+        a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 35px;
+            display: block;
+            margin-bottom: 20px;
+
+            li {
+                list-style: none;
+                text-align: center;
+                .d-d {
+                    display: flex;
+                    align-items: center; 
+                }
+            }
+        }
+    }
+}
+
+.nav-close {
+    display: none; 
 }
 
 section, footer {
@@ -605,6 +644,9 @@ hr {
 
 
 //OVERIDES ON SERVICES PAGE ---------------------------------------
+.services {
+    //padding-bottom: 0px;
+}
 .services-header {
     text-align: left;
     padding: 0px;
@@ -659,3 +701,58 @@ hr {
         }
     }
 } 
+
+//OVERIDES ON ADOBE XD ---------------------------------------
+.about-header, .what-we-do {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.022em;
+        color: var(--darkgreyishblue);
+    }
+    p {
+        font-weight: 14px;
+    }
+}
+
+.contact-us {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: $padding;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .ready {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bar {
+        height: 44px;
+        width: 4px;
+        background-color: var(--white);
+        margin-right: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 2px;
+    }
+}

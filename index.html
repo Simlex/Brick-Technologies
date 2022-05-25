@@ -43,13 +43,40 @@
                 </svg>
         </div>
         <div class="nav-menu">
-            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav-open" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 0.999902C0.150024 0.53046 0.530582 0.149902 1.00002 0.149902H13C13.4695 0.149902 13.85 0.53046 13.85 0.999902C13.85 1.46934 13.4695 1.8499 13 1.8499H1.00002C0.530582 1.8499 0.150024 1.46934 0.150024 0.999902Z" fill="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 4.9999C0.150024 4.53046 0.530582 4.1499 1.00002 4.1499H13C13.4695 4.1499 13.85 4.53046 13.85 4.9999C13.85 5.46934 13.4695 5.8499 13 5.8499H1.00002C0.530582 5.8499 0.150024 5.46934 0.150024 4.9999Z" fill="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 8.9999C0.150024 8.53046 0.530582 8.1499 1.00002 8.1499H13C13.4695 8.1499 13.85 8.53046 13.85 8.9999C13.85 9.46934 13.4695 9.8499 13 9.8499H1.00002C0.530582 9.8499 0.150024 9.46934 0.150024 8.9999Z" fill="black"/>
                 </svg>
+            <svg class="nav-open nav-close" width="14" height="12" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 1L1 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1L16 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </nav>
+
+    <div class="nav-overlay nav-close">
+        <ul>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./services.html"><li>Services</li></a>
+            <a href="#"><li> 
+                <div class="d-d">
+                Industries 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41421 10C8.52331 10 8.07714 11.0771 8.70711 11.7071L11.2929 14.2929C11.6834 14.6834 12.3166 14.6834 12.7071 14.2929L15.2929 11.7071C15.9229 11.0771 15.4767 10 14.5858 10H9.41421Z" fill="#C2D1D9"/>
+                    <mask id="mask0_204_3118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="10" width="8" height="5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41421 10C8.52331 10 8.07714 11.0771 8.70711 11.7071L11.2929 14.2929C11.6834 14.6834 12.3166 14.6834 12.7071 14.2929L15.2929 11.7071C15.9229 11.0771 15.4767 10 14.5858 10H9.41421Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_204_3118)">
+                    <rect width="24" height="24" fill="#C2D1D9"/>
+                    </g>
+                    </svg>
+            </div> 
+            </li></a>
+            <a href="#"><li>Projects</li></a>
+            <a href="#"><li>Blog</li></a>
+        </ul>
+    </div>
 
     <section class="header">
         <div class="header__overlay">
@@ -543,6 +570,7 @@
         </div>
     </section>
 
+
     <footer class="footer">
         <div class="footer__svg">
             <svg width="99" height="42.5" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -574,21 +602,6 @@
             <p>We build seamless and beautiful product for the 
                 best human centric experiences</p>
         </div>
-            <form action="" class="form">
-                <div class="form__input">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.34806 3 1.01 4.34735 1.01 6L1 17.9992C1 19.6523 2.34772 21 4 21H20C21.6523 21 23 19.6523 23 18V6C23 4.34772 21.6523 3 20 3ZM5.48406 9.00015C5.01101 8.71512 4.85859 8.10058 5.14361 7.62753C5.42864 7.15447 6.04318 7.00205 6.51623 7.28708L11.9707 10.5735L17.6632 7.14361C18.1363 6.85859 18.7517 7.01239 19.0367 7.48544C19.3211 7.95742 19.1709 8.57188 18.6998 8.85777L12.01 12.918L12.0037 12.9284L5.48406 9.00015Z" fill="#979797"/>
-                        <mask id="mask0_204_3086" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="22" height="18">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.34806 3 1.01 4.34735 1.01 6L1 17.9992C1 19.6523 2.34772 21 4 21H20C21.6523 21 23 19.6523 23 18V6C23 4.34772 21.6523 3 20 3ZM5.48406 9.00015C5.01101 8.71512 4.85859 8.10058 5.14361 7.62753C5.42864 7.15447 6.04318 7.00205 6.51623 7.28708L11.9707 10.5735L17.6632 7.14361C18.1363 6.85859 18.7517 7.01239 19.0367 7.48544C19.3211 7.95742 19.1709 8.57188 18.6998 8.85777L12.01 12.918L12.0037 12.9284L5.48406 9.00015Z" fill="white"/>
-                        </mask>
-                        <g mask="url(#mask0_204_3086)">
-                        <rect width="24" height="24" fill="#424B5A"/>
-                        </g>
-                        </svg>
-                    <input type="email" placeholder="Email">
-                </div>
-                <input type="button" value="Subscribe">
-            </form>
         <div class="footer__links">
             <div class="footer__links--group">
                 <div class="item">
@@ -652,6 +665,21 @@
                     </a>
                 </div>
             </div>
+            <form action="" class="form">
+                <div class="form__input">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.34806 3 1.01 4.34735 1.01 6L1 17.9992C1 19.6523 2.34772 21 4 21H20C21.6523 21 23 19.6523 23 18V6C23 4.34772 21.6523 3 20 3ZM5.48406 9.00015C5.01101 8.71512 4.85859 8.10058 5.14361 7.62753C5.42864 7.15447 6.04318 7.00205 6.51623 7.28708L11.9707 10.5735L17.6632 7.14361C18.1363 6.85859 18.7517 7.01239 19.0367 7.48544C19.3211 7.95742 19.1709 8.57188 18.6998 8.85777L12.01 12.918L12.0037 12.9284L5.48406 9.00015Z" fill="#979797"/>
+                        <mask id="mask0_204_3086" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="22" height="18">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.34806 3 1.01 4.34735 1.01 6L1 17.9992C1 19.6523 2.34772 21 4 21H20C21.6523 21 23 19.6523 23 18V6C23 4.34772 21.6523 3 20 3ZM5.48406 9.00015C5.01101 8.71512 4.85859 8.10058 5.14361 7.62753C5.42864 7.15447 6.04318 7.00205 6.51623 7.28708L11.9707 10.5735L17.6632 7.14361C18.1363 6.85859 18.7517 7.01239 19.0367 7.48544C19.3211 7.95742 19.1709 8.57188 18.6998 8.85777L12.01 12.918L12.0037 12.9284L5.48406 9.00015Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0_204_3086)">
+                        <rect width="24" height="24" fill="#424B5A"/>
+                        </g>
+                        </svg>
+                    <input type="email" placeholder="Email">
+                </div>
+                <input type="button" value="Subscribe">
+            </form>
         </div>
     </footer>
         <hr>
