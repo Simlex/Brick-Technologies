@@ -662,17 +662,21 @@ hr {
     .top {
         margin-bottom: 10px;
         transform: translateX(5%);
-        animation: scrollTop 40s linear infinite;
+        animation-name: scrollTop; 
     }
     .bottom {
         transform: translateX(-60%);
-        animation: scrollBottom 40s linear infinite;
+        animation-name: scrollBottom;
     }
 
     .top , .bottom {
         display: flex;
         flex-shrink: 0;
         gap: 20px;       
+        
+        animation-duration: 40s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
         
         .box {
             border: $bor;
