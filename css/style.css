@@ -132,8 +132,6 @@ section, footer {
   font-weight: 400;
   padding-left: 4px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .form__input input[type], .form__input select, .form__input textarea {
