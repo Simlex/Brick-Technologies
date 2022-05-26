@@ -775,15 +775,15 @@ hr {
   margin-bottom: 10px;
   -webkit-transform: translateX(5%);
           transform: translateX(5%);
-  -webkit-animation: scrollTop 40s linear infinite;
-          animation: scrollTop 40s linear infinite;
+  -webkit-animation-name: scrollTop;
+          animation-name: scrollTop;
 }
 
 .services-carousel .bottom {
   -webkit-transform: translateX(-60%);
           transform: translateX(-60%);
-  -webkit-animation: scrollBottom 40s linear infinite;
-          animation: scrollBottom 40s linear infinite;
+  -webkit-animation-name: scrollBottom;
+          animation-name: scrollBottom;
 }
 
 .services-carousel .top, .services-carousel .bottom {
@@ -793,6 +793,12 @@ hr {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   gap: 20px;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .services-carousel .top .box, .services-carousel .bottom .box {
@@ -822,8 +828,8 @@ hr {
             transform: translateX(5%);
   }
   100% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
   }
 }
 
@@ -833,8 +839,8 @@ hr {
             transform: translateX(5%);
   }
   100% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
   }
 }
 
@@ -844,8 +850,8 @@ hr {
             transform: translateX(-60%);
   }
   100% {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
   }
 }
 
@@ -855,8 +861,8 @@ hr {
             transform: translateX(-60%);
   }
   100% {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
   }
 }
 

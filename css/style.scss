@@ -674,7 +674,7 @@ hr {
         flex-shrink: 0;
         gap: 20px;       
         
-        animation-duration: 40s;
+        animation-duration: 10s; 
         animation-direction: alternate;
         animation-iteration-count: infinite;
         
@@ -697,7 +697,7 @@ hr {
             transform: translateX(5%);
         }
         100% {
-            transform: translateX(-500px); 
+            transform: translateX(-300px); 
         }
     }
     @keyframes scrollBottom {
@@ -705,7 +705,7 @@ hr {
             transform: translateX(-60%);
         }
         100% {
-            transform: translateX(500px); 
+            transform: translateX(25px); 
         }
     }
 }
