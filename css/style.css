@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Jost', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 
 :root {
@@ -17,9 +20,9 @@
 }
 
 body {
+  position: relative;
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
-  position: relative;
 }
 
 h2 {
@@ -241,8 +244,12 @@ section, footer {
 }
 
 .process__images {
-  height: 194px;
-  width: 100%;
+  width: 348px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 38px;
 }
 
@@ -399,6 +406,11 @@ section, footer {
           align-items: center;
 }
 
+.our-works__project--btn:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
 .our-works__check-services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,6 +495,11 @@ section, footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.blog__content--btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .feedback .contents__item {
@@ -645,6 +662,11 @@ section, footer {
   line-height: 21px;
   color: var(--darkgreyishblue);
   margin-bottom: 24px;
+}
+
+.contact__details .phone a, .contact__details .mail a {
+  text-decoration: none;
+  color: var(--blue);
 }
 
 .contact__details .phone {
@@ -940,7 +962,7 @@ hr {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.022em;
-  color: var(--darkgreyishblue);
+  color: var(--blue);
 }
 
 .about-header p, .what-we-do p {
@@ -951,6 +973,7 @@ hr {
   background-color: var(--blue);
   color: var(--white);
   padding: 0px 40px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,13 +1009,23 @@ hr {
 }
 
 .contact-us__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 6px;
   padding: 10px 2px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact-us__btn p {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.contact-us__btn svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 /*# sourceMappingURL=style.css.map */

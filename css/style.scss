@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+    transition: 300ms all ease;
 }
 
 $padding: 0px 40px;
@@ -20,9 +22,9 @@ $optimal : 16;
 }
 
 body {
-    transition: 300ms all ease;
     position: relative;
-}
+    transition: 300ms all ease;
+} 
 
 h2 {
     display: block;
@@ -213,8 +215,10 @@ section, footer {
 .process {
 
     &__images {
-        height: 194px;
-        width: 100%;
+        width: 348px;
+        height: fit-content;
+        display: block;
+        margin: 0 auto;
         margin-bottom: 38px;
     }
 
@@ -335,6 +339,10 @@ section, footer {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &:hover {
+                transform: translateY(-10%);
+            }
         }
     }
 
@@ -408,6 +416,11 @@ section, footer {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &:hover {
+                background-color: var(--blue);
+                color: var(--white);
+            }
         }
     }
 }
@@ -548,6 +561,13 @@ section, footer {
  //Form style---------------------- generalized
 
     &__details {
+
+        .phone, .mail {
+            a {
+                text-decoration: none;
+                color: var(--blue);
+            }
+        }
 
         .phone {
             display: flex;
@@ -768,7 +788,7 @@ hr {
         font-size: 24px;
         line-height: 36px;
         letter-spacing: -0.022em;
-        color: var(--darkgreyishblue);
+        color: var(--blue);
     }
     p {
         font-weight: 14px;
@@ -779,6 +799,7 @@ hr {
     background-color: var(--blue);
     color: var(--white);
     padding: $padding;
+    width: 100%;
 
     
     display: flex;
@@ -806,9 +827,15 @@ hr {
     }
 
     &__btn {
-        display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 6px;
         padding: 10px 2px;
+        display: inline-flex; 
+        p {
+            flex-shrink: 0;
+        }
+        svg {
+            flex-shrink: 0;
+        }
     }
 }
