@@ -719,6 +719,100 @@ hr {
   font-size: 14px;
 }
 
+.services-carousel {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.services-carousel .top {
+  margin-bottom: 10px;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  -webkit-animation: scrollTop 40s linear infinite;
+          animation: scrollTop 40s linear infinite;
+}
+
+.services-carousel .bottom {
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  -webkit-animation: scrollBottom 40s linear infinite;
+          animation: scrollBottom 40s linear infinite;
+}
+
+.services-carousel .top, .services-carousel .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  gap: 20px;
+}
+
+.services-carousel .top .box, .services-carousel .bottom .box {
+  border: 1px solid #000;
+  height: 33px;
+  border-radius: 20px;
+  padding: 0 20px;
+  border-color: var(--blue);
+  font-size: 12px;
+  font-weight: 400;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes scrollTop {
+  0% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+@keyframes scrollTop {
+  0% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+@-webkit-keyframes scrollBottom {
+  0% {
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  100% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+}
+
+@keyframes scrollBottom {
+  0% {
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  100% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+}
+
 .info-container {
   width: 100%;
   margin: 0 auto;

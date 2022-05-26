@@ -613,6 +613,57 @@ hr {
     font-size: 14px;
 }
 
+.services-carousel {
+    width: 100%;
+    opacity: 0.8;
+
+    .top {
+        margin-bottom: 10px;
+        transform: translateX(5%);
+        animation: scrollTop 40s linear infinite;
+    }
+    .bottom {
+        transform: translateX(-60%);
+        animation: scrollBottom 40s linear infinite;
+    }
+
+    .top , .bottom {
+        display: flex;
+        flex-shrink: 0;
+        gap: 20px;       
+        
+        .box {
+            border: $bor;
+            height: 33px;
+            border-radius: 20px; 
+            padding: 0 20px;
+            border-color: var(--blue);
+            font-size: 12px;
+            font-weight: 400;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @keyframes scrollTop {
+        0% {
+            transform: translateX(5%);
+        }
+        100% {
+            transform: translateX(-500px); 
+        }
+    }
+    @keyframes scrollBottom {
+        0% {
+            transform: translateX(-60%);
+        }
+        100% {
+            transform: translateX(500px); 
+        }
+    }
+}
+
 .info-container {
     //width: 338px;
     width: 100%;
