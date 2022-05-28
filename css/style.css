@@ -56,6 +56,14 @@ nav .nav-logo {
   display: flex;
 }
 
+.nav-menu {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
 .nav-overlay {
   border: 1px solid #000;
   height: 100vh;
@@ -87,6 +95,12 @@ nav .nav-logo {
 .nav-overlay ul a li {
   list-style: none;
   text-align: center;
+  -webkit-animation-name: nav-animation;
+          animation-name: nav-animation;
+  -webkit-animation-delay: calc(var(--link) * 100ms);
+  animation-delay: calc(var(--link) * 100ms);
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
 }
 
 .nav-overlay ul a li .d-d {
@@ -96,6 +110,36 @@ nav .nav-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-overlay ul a li:hover {
+  border-bottom: 6px solid rgba(255, 255, 255, 0.204);
+}
+
+@-webkit-keyframes nav-animation {
+  0% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+@keyframes nav-animation {
+  0% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100;
+  }
 }
 
 .nav-close {
@@ -242,7 +286,7 @@ section, footer {
 }
 
 .process__images {
-  width: 348px;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

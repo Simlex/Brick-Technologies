@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <meta http-equiv="refresh" content="10"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,18 +49,19 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 4.9999C0.150024 4.53046 0.530582 4.1499 1.00002 4.1499H13C13.4695 4.1499 13.85 4.53046 13.85 4.9999C13.85 5.46934 13.4695 5.8499 13 5.8499H1.00002C0.530582 5.8499 0.150024 5.46934 0.150024 4.9999Z" fill="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 8.9999C0.150024 8.53046 0.530582 8.1499 1.00002 8.1499H13C13.4695 8.1499 13.85 8.53046 13.85 8.9999C13.85 9.46934 13.4695 9.8499 13 9.8499H1.00002C0.530582 9.8499 0.150024 9.46934 0.150024 8.9999Z" fill="black"/>
                 </svg>
-            <svg class="nav-open nav-close" width="14" height="12" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav-close" width="14" height="12" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 1L1 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M1 1L16 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
     </nav>
 
-    <div class="nav-overlay nav-close">
-        <ul>
-            <a href="./about.html"><li>About Us</li></a>
-            <a href="./services.html"><li>Services</li></a>
-            <a href="#"><li> 
+    <div class="nav-overlay" style="display: none">
+        <ul class="nav-links">
+            <a href="./about.html"><li style="--link: 1;">About Us</li></a>
+            <a href="./services.html"><li style="--link: 1.5;">Services</li></a>
+            <a href="#">
+                <li style="--link: 2;"> 
                 <div class="d-d">
                 Industries 
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,9 +74,9 @@
                     </g>
                     </svg>
             </div> 
-            </li></a>
-            <a href="#"><li>Projects</li></a>
-            <a href="#"><li>Blog</li></a>
+            </li style="--link: 2.5;"></a>
+            <a href="#"><li style="--link: 3;">Projects</li></a>
+            <a href="#"><li style="--link: 3.5;">Blog</li></a>
         </ul>
     </div>
 
@@ -391,7 +393,7 @@
                         </a>
                     </div>
                     <div class="socials__icon">
-                        <a href="https://wa.link/2ufpcv">
+                        <a href="http://www.linkedin.com/in/oluwamichael">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.5 22.5C24.5 23.328 23.828 24 23 24H2C1.172 24 0.5 23.328 0.5 22.5V1.5C0.5 0.672 1.172 0 2 0H23C23.828 0 24.5 0.672 24.5 1.5V22.5Z" fill="#007BB5"/>
                                 <path d="M8.75 8.25H5.75V18.75H8.75V8.25Z" fill="white"/>
@@ -400,8 +402,8 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="socials__icon">
-                        <a href="http://www.linkedin.com/in/oluwamichael">
+                    <div class="socials__icon"> 
+                        <a href="https://wa.link/2ufpcv">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.84345 20.5551L7.2358 20.7491C8.87079 21.7186 10.7018 22.1711 12.533 22.1711C18.2878 22.1711 22.9963 17.5171 22.9963 11.829C22.9963 9.11418 21.8845 6.46399 19.9227 4.52481C17.9608 2.58563 15.3449 1.48682 12.533 1.48682C6.77811 1.48682 2.06951 6.14078 2.13495 11.8936C2.13495 13.8327 2.72351 15.7073 3.70442 17.3232L3.96598 17.7111L2.91973 21.5248L6.84345 20.5551Z" fill="#00E676"/>
                                 <path d="M21.0343 3.49047C18.8109 1.22817 15.7373 0 12.5983 0C5.92794 0 0.565437 5.36497 0.630781 11.8934C0.630781 13.9619 1.21934 15.9657 2.20034 17.7756L0.5 23.9162L6.84341 22.3003C8.60909 23.2699 10.5709 23.7224 12.5329 23.7224C19.1379 23.7224 24.5004 18.3573 24.5004 11.8289C24.5004 8.66159 23.2578 5.68819 21.0344 3.49047H21.0343Z" fill="white"/>
@@ -433,7 +435,7 @@
                         </a>
                     </div>
                     <div class="socials__icon">
-                        <a href="http://instagram.com/just_hameenah">
+                        <a href="https://www.linkedin.com/in/aminat-akinode-070696186">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.5 22.5C24.5 23.328 23.828 24 23 24H2C1.172 24 0.5 23.328 0.5 22.5V1.5C0.5 0.672 1.172 0 2 0H23C23.828 0 24.5 0.672 24.5 1.5V22.5Z" fill="#007BB5"/>
                                 <path d="M8.75 8.25H5.75V18.75H8.75V8.25Z" fill="white"/>
@@ -443,7 +445,7 @@
                         </a>
                     </div>
                     <div class="socials__icon">
-                        <a href="https://www.linkedin.com/in/aminat-akinode-070696186">
+                        <a href="http://instagram.com/just_hameenah">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.7 24L20.3 24C22.6196 24 24.5 22.1196 24.5 19.8L24.5 4.2C24.5 1.8804 22.6196 0 20.3 0L4.7 0C2.3804 0 0.5 1.8804 0.5 4.2L0.5 19.8C0.5 22.1196 2.3804 24 4.7 24Z" fill="url(#paint0_radial_197_3609)"/>
                                 <path d="M17 21H8C6.80653 21 5.66193 20.5259 4.81802 19.682C3.97411 18.8381 3.5 17.6935 3.5 16.5V7.5C3.5 6.30653 3.97411 5.16193 4.81802 4.31802C5.66193 3.47411 6.80653 3 8 3H17C18.1935 3 19.3381 3.47411 20.182 4.31802C21.0259 5.16193 21.5 6.30653 21.5 7.5V16.5C21.5 17.6935 21.0259 18.8381 20.182 19.682C19.3381 20.5259 18.1935 21 17 21ZM8 4.8C7.28422 4.80099 6.59804 5.08577 6.09191 5.59191C5.58577 6.09804 5.30099 6.78422 5.3 7.5V16.5C5.30099 17.2158 5.58577 17.902 6.09191 18.4081C6.59804 18.9142 7.28422 19.199 8 19.2H17C17.7158 19.199 18.402 18.9142 18.9081 18.4081C19.4142 17.902 19.699 17.2158 19.7 16.5V7.5C19.699 6.78422 19.4142 6.09804 18.9081 5.59191C18.402 5.08577 17.7158 4.80099 17 4.8H8Z" fill="white"/>
@@ -693,5 +695,10 @@
         </div>
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+<script src="./aos-master/src/js/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script src="js/script.js"></script>
 </html>
