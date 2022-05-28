@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <meta http-equiv="refresh" content="10"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="favicon" href="./assets/icons/favicon.svg">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Services | Brick Technologies</title>
+    <title>Brick Technologies</title>
 </head>
 
 <body>
     <nav class="nav-mobile">
-        <div class="nav-logo">
+        <a href="./index.html" class="nav-logo">
             <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.02458 5.35382V1.41431H2.82223V4.04797H0V19.9377H2.99725V22.7908H13.2032V18.3465H17.5897V13.9461H13.2032V18.3575H4.62715V13.9461H13.2032V5.35382H9.02458ZM4.63809 5.35382H9.02458V9.7652H4.63809V5.35382Z" fill="url(#paint0_linear_197_3744)"/>
                 <path d="M20.8303 0.788818H20.762V23.2111H20.8303V0.788818Z" fill="black"/>
@@ -41,15 +42,43 @@
                 </linearGradient>
                 </defs>
                 </svg>
-        </div>
+        </a>
         <div class="nav-menu">
-            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav-open" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 0.999902C0.150024 0.53046 0.530582 0.149902 1.00002 0.149902H13C13.4695 0.149902 13.85 0.53046 13.85 0.999902C13.85 1.46934 13.4695 1.8499 13 1.8499H1.00002C0.530582 1.8499 0.150024 1.46934 0.150024 0.999902Z" fill="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 4.9999C0.150024 4.53046 0.530582 4.1499 1.00002 4.1499H13C13.4695 4.1499 13.85 4.53046 13.85 4.9999C13.85 5.46934 13.4695 5.8499 13 5.8499H1.00002C0.530582 5.8499 0.150024 5.46934 0.150024 4.9999Z" fill="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.150024 8.9999C0.150024 8.53046 0.530582 8.1499 1.00002 8.1499H13C13.4695 8.1499 13.85 8.53046 13.85 8.9999C13.85 9.46934 13.4695 9.8499 13 9.8499H1.00002C0.530582 9.8499 0.150024 9.46934 0.150024 8.9999Z" fill="black"/>
                 </svg>
+            <svg class="nav-close" width="14" height="12" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 1L1 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1L16 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </nav>
+
+    <div class="nav-overlay" style="display: none">
+        <ul class="nav-links">
+            <a href="./about.html"><li style="--link: 1;">About Us</li></a>
+            <a href="./services.html"><li style="--link: 1.5;">Services</li></a>
+            <a href="#">
+                <li style="--link: 2;"> 
+                <div class="d-d">
+                Industries 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41421 10C8.52331 10 8.07714 11.0771 8.70711 11.7071L11.2929 14.2929C11.6834 14.6834 12.3166 14.6834 12.7071 14.2929L15.2929 11.7071C15.9229 11.0771 15.4767 10 14.5858 10H9.41421Z" fill="#C2D1D9"/>
+                    <mask id="mask0_204_3118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="10" width="8" height="5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41421 10C8.52331 10 8.07714 11.0771 8.70711 11.7071L11.2929 14.2929C11.6834 14.6834 12.3166 14.6834 12.7071 14.2929L15.2929 11.7071C15.9229 11.0771 15.4767 10 14.5858 10H9.41421Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_204_3118)">
+                    <rect width="24" height="24" fill="#C2D1D9"/>
+                    </g>
+                    </svg>
+            </div> 
+            </li style="--link: 2.5;"></a>
+            <a href="#"><li style="--link: 3;">Projects</li></a>
+            <a href="#"><li style="--link: 3.5;">Blog</li></a>
+        </ul>
+    </div>
 
     <section class="services">
         <h2 class="services-header">
@@ -361,7 +390,12 @@
             <p>&copy;2022 - Form | All right reserved</p>
             <p class="ref">Developed by <a href="https://simlex.netlify.app/">Simlex</a></p>
         </div>
-</body>
+    </body>
 
-<script src="js/script.js"></script>
-</html>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script src="./aos-master/src/js/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="js/script.js"></script>
+    </html>
