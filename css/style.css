@@ -228,6 +228,11 @@ section, footer {
   color: var(--white);
 }
 
+.header a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .header__overlay {
   width: 100%;
   height: 100%;
