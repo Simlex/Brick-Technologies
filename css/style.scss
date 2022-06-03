@@ -7,7 +7,10 @@
     transition: 300ms all ease;
 }
 
+@import "mixins";
+
 $padding: 0px 40px;
+$padding-desktop: 0 140px;
 $bor: 1px solid #000; 
 $optimal : 16;
 
@@ -74,7 +77,8 @@ nav {
             font-weight: 600;
             font-size: 24px;
             line-height: 35px;
-            display: block;
+            display: flex;
+            justify-content: center;
             margin-bottom: 20px;
 
             li {
@@ -188,6 +192,12 @@ section, footer {
     position: relative;
     z-index: 1;
     color: var(--white);
+    
+    @include media("screen", ">=desktop") {
+        padding: $padding-desktop;
+        padding-top: 187px;
+        padding-bottom: 234px;
+    } 
 
     a {
         text-decoration: none;
@@ -208,11 +218,22 @@ section, footer {
     &__content {
         text-align: center;
         z-index: 2;
+        @include media("screen", ">=desktop") {
+            width: 980px;  
+            margin: 0 auto;
+        } 
 
         &--main-text {
             font-size: 34px;
             font-weight: 700;
             line-height: 36px;  
+            
+            @include media("screen", ">=desktop") {
+                font-size: 64px;
+                line-height: 74px;
+                text-align: center;
+                letter-spacing: -0.022em;
+            } 
 
             span {
                 color: var(--blue);
@@ -224,6 +245,14 @@ section, footer {
             font-weight: 400;
             line-height: 20px;
             margin: 24px 0px;
+
+            @include media("screen", ">=desktop") {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 34px;
+                text-align: center;
+                margin: 54px 0px;
+            } 
         }
 
         &--btn {
@@ -237,6 +266,14 @@ section, footer {
             justify-content: center;
             align-items: center;
 
+            @include media("screen", ">=desktop") {
+                width: 380px;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px 0px; 
+            }  
+
             &:hover {
                 background: linear-gradient(90deg, #003F9B 0%, #0068FF 100%);
                 transform: translateY(-2px);
@@ -246,6 +283,21 @@ section, footer {
 }
 
 .process {
+    @include media("screen", ">=desktop") {
+        padding: 74px 180px;
+        position: relative;
+        height: 675px;
+        //width: 1100px;
+        margin: 0 auto;
+    } 
+    
+    h2 {
+        @include media("screen", ">=desktop") {
+            text-align: left; 
+            width: fit-content;
+            margin-right: 0;
+        } 
+    }
 
     &__images {
         width: 100%;
@@ -253,11 +305,25 @@ section, footer {
         display: block;
         margin: 0 auto;
         margin-bottom: 38px;
+    
+        @include media("screen", ">=desktop") {
+            /* height: 320px;
+            width: auto; */
+            width: 50%; 
+            float: left;
+        } 
     }
 
     &__steps {
         color: var(--blue);
         position: relative;
+    
+        @include media("screen", ">=desktop") {
+            width: 340px; 
+            float: right;
+            top: -90px;     
+            margin-right: 50px; 
+        } 
 
         &--line {
             position: absolute;
@@ -303,6 +369,10 @@ section, footer {
         align-items: center;
         padding: 0px;
         gap: 12px;
+    
+        @include media("screen", ">=desktop") {
+            float: left; 
+        }    
         
         a {
             text-decoration: underline;
@@ -322,6 +392,10 @@ section, footer {
 }
 
 .our-works {
+    @include media("screen", ">=desktop") {
+        padding: 0px 180px;
+        border: $bor;
+    } 
     h2 {
         margin-bottom: 12px;
     }
@@ -543,6 +617,7 @@ section, footer {
                 font-size: 12px;
                 line-height: 16px;
                 margin: 12px;
+                color: var(--sub-info); 
             }
 
             .socials {
