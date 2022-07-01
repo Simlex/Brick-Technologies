@@ -22,6 +22,8 @@ $optimal : 16;
     --darkgreyishblue : #435680;
     --inputgrey : #C2D1D9;
     --sub-info : #666666;
+
+    --orange : #FD4101;
 }
 
 body {
@@ -1329,6 +1331,152 @@ hr {
         }
         svg {
             flex-shrink: 0;
+        }
+    }
+}
+
+//OVERIDES ON PROJECT PAGE ---------------------------------------
+
+.projectHeader {
+    color: var(--darkgreyishblue);
+    &__text {
+        text-align: left;
+        color: var(--orange);
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+    &__info {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+}
+
+.aboutProject {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+
+    &__img {
+        width: 500px;
+    }
+
+    &__sub-section {
+        height: fit-content;
+        color: var(--darkgreyishblue);
+
+        &--info {
+            margin-bottom: 48px;
+            h4 {
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 24px;
+                color: var(--orange);
+            }
+        }
+        &--sort {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+            .item {
+                display: flex;
+                gap: 8px;
+
+                .title {
+                    width: 72px;
+                }
+                span {
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+}
+
+.projectProcess {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: var(--orange);
+    }
+
+    &__audience {
+
+        &--statsGrp {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 16px;
+            .stats {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+
+                span {
+                    width: 48px;
+                }
+
+                .progressBar {
+                    width: 90px;
+                    height: 10px;
+                    border-radius: 8px;
+                    background-color: transparent;
+                    position: relative;
+                    display: flex;
+
+                    &:after {
+                        /* position: absolute;
+                        top: 0;
+                        left: 0; */
+                        border: var(--orange);
+                        content: '';
+                        width: 28%;
+                        height: 100%;
+                        border-radius: 8px;
+                        background-color: var(--orange);
+                    }
+                    &:after:nth-of-type(3) {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__impact {
+        &--img {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 16px;
+            overflow-x: auto;
+            position: relative;
+            &::-webkit-scrollbar {
+                display: none;
+            } 
+            img {
+                height: 300px;
+            }
+            /* &:before {
+                content: '';
+                position: absolute;
+                width: 10%;
+                background-color: #000;
+                height: 100%;
+                top: 0;
+                left: 0;
+            } */
         }
     }
 }
