@@ -403,9 +403,21 @@ section, footer {
 
         &--items {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
+            gap: 80px;
             width: 100%;
             margin-bottom: 38px;
+            // border: $bor;
+            @include media("screen", ">=desktop") {
+                justify-content: space-between;
+                gap: 0;
+            } 
+            @include media("screen", "<=600px") {
+                padding-left: 6px;
+            } 
+            // @include media("screen", "<=880px") {
+            //     padding-left: 30px;
+            // } 
 
             .number {
                 width: 44px;
