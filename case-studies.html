@@ -70,13 +70,13 @@
         </div>
 
     </nav>
-
+    
     <div class="nav-overlay" style="display: none">
         <ul class="nav-links">
             <a href="./about.html"><li style="--link: 1;">About Us</li></a>
             <a href="./services.html"><li style="--link: 1.5;">Services</li></a>
             <a href="./industries.html"><li style="--link: 2;">Industries</li></a>
-            <a href="#"><li style="--link: 2.5;">Projects</li></a>
+            <a href="./case-studies.html"><li style="--link: 2.5;">Projects</li></a>
             <a href="#"><li style="--link: 3;">Blog</li></a>
         </ul>
     </div>
@@ -84,7 +84,7 @@
     <section class="projectHeader">
         <h2 class="projectHeader__text">Cartalog.</h2>
         <p class="projectHeader__info">Creating a user friendly mobile application for sellers and consumers.</p>
-        <p class="projectHeader __info--brickTech">How Brick Technologies helped Cartalog to boost their operatiobs by building a system to bring sellers and consumers all in one place.</p>
+        <p class="projectHeader__info--brickTech">How Brick Technologies helped Cartalog to boost their operatiobs by building a system to bring sellers and consumers all in one place.</p>
     </section>
 
     <section class="aboutProject">
@@ -224,7 +224,7 @@
     <section class="our-works">
         <h2>Our Works</h2>
         <div class="projects">
-            <div class="our-works__project">
+            <div class="our-works__project" data-aos="fade-up" data-aos-duration="400">
                 <div class="our-works__project--image">
                     <img src="/assets/images/cartalog-ecommerce.png" alt="cartalog-ecommerce image">
                 </div>
@@ -251,7 +251,7 @@
                 </div>
                 
             </div>
-            <div class="our-works__project">
+            <div class="our-works__project" data-aos="fade-up" data-aos-duration="400">
                 <div class="our-works__project--image">
                     <img src="/assets/images/parkzee.png" alt="Parkzee image">
                 </div>
@@ -276,16 +276,16 @@
             </div>
             </div>
         </div>
-        <!-- <div class="our-works__check-services">
+        <div class="our-works__check-services">
             <a href="#">Check out more case studies 
                 <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 10.5L6.34998 6L1 1.5" stroke="#0668E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
-        </div> -->
+        </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" class="contents" data-aos="fade-up" data-aos-duration="800">
         <h2>Contact us</h2>
         <div class="contactGrp">
             <div class="Grp">
@@ -477,5 +477,12 @@
             <p>&copy;2022 - Form | All right reserved</p>
             <p class="ref">Developed by <a href="https://simlex.netlify.app/">Simlex</a></p>
         </div>
-</body>
+</body>    
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+<script src="./aos-master/src/js/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+<script src="js/script.js"></script>
 </html>  
